@@ -1,0 +1,132 @@
+@media screen and (width < 1000px) {
+  .cateogry-title::after {
+    width: 10rem;
+  }
+  .cateogry {
+    width: 25rem;
+
+    justify-content: center;
+    margin-left: 3rem;
+
+  }
+  
+}
+@media screen and (width > 1000px) {
+  .cateogry-title::after {
+    width: 19rem;
+  }
+  .cateogry {
+    width: 85rem;
+  }
+}
+/* cateogry title styles */
+.cateogry-title {
+  font-family: sans-serif;
+  margin: 4rem;
+}
+.cateogry-title::after {
+  content: "";
+  height: 0.2rem;
+  margin-top: 0.2rem;
+  background-color: var(--main-bg-color);
+  display: block;
+  transform: scale(0);
+  transition: transform ease-in-out 800ms;
+}
+
+.cateogry-title:hover::after {
+  transform: scale(1.1);
+}
+/* category styles  */
+.cateogry {
+  overflow: hidden;
+  height: 30rem;
+  border: 3px solid var(--main-bg-color);
+  border-radius: 1rem;
+  position: relative;
+  inset: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.6rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  justify-content: start;
+  justify-items: baseline;
+  scroll-behavior: smooth;
+  transition: border-color ease-in-out 500ms;
+}
+.cateogry::-webkit-scrollbar {
+  overflow: hidden;
+}
+.cateogry:hover {
+  border-color: black;
+}
+/* service styles */
+.image {
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform ease-in-out 500ms;
+  overflow: hidden;
+}
+.image:hover {
+  transform: scale(1.1);
+  border: 2px solid var(--main-bg-color);
+}
+.service {
+  position: relative;
+  inset: 0;
+  margin: auto 0;
+  padding: 2rem;
+  font-family: sans-serif;
+  width: 15rem;
+}
+.heading {
+  padding: 0.6rem;
+  margin-left: -1rem;
+  color: var(--main-bg-color);
+}
+.heading:hover {
+    color: black;
+}
+.heading::after {
+  content: "";
+  height: 0.25rem;
+  margin-top: 0.2rem;
+  background-color: var(--main-bg-color);
+  display: block;
+  transform: scale(0);
+  transition: transform ease-in-out 800ms;
+}
+.heading:hover::after {
+  transform: scale(0.7);
+}
+.child-head {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.details {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.order-btn {
+  position: relative;
+  inset: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 2.5rem;
+  margin-top: 1rem;
+  border: 3px solid var(--main-bg-color);
+  background-color: black;
+  color: white;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  transition: all ease-in-out 500ms;
+}
+.order-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: var(--main-bg-color);
+  border-color: black;
+  border-color: rgb(184, 182, 149);
+}
