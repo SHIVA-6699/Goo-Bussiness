@@ -6,10 +6,11 @@
     width: 25rem;
 
     justify-content: center;
-    margin-left: 3rem;
-
+    margin-left: 13rem;
   }
-  
+  .popbtn {
+    right: -15rem;
+  }
 }
 @media screen and (width > 1000px) {
   .cateogry-title::after {
@@ -69,6 +70,8 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   transition: transform ease-in-out 500ms;
   overflow: hidden;
+  object-position: center;
+  object-fit: cover;
 }
 .image:hover {
   transform: scale(1.1);
@@ -88,7 +91,7 @@
   color: var(--main-bg-color);
 }
 .heading:hover {
-    color: black;
+  color: black;
 }
 .heading::after {
   content: "";
@@ -129,4 +132,20 @@
   background-color: var(--main-bg-color);
   border-color: black;
   border-color: rgb(184, 182, 149);
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  top: 10rem;
+  animation: arrows ease-in-out 1s infinite;
+  transition: transform ease-in-out 1s;
+}
+@keyframes arrows {
+  from {
+    transform: translateY(-1.5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
 }
