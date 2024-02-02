@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Services</title>
+    <link rel="stylesheet" href="../Service_styles/service1_style.css" />
+  </head>
+  <body>
+    <!-- -------------------Code here------------------ -->
+    <script>
+      function orderService(item) {
+        alert(`Your item "${item}" has been successfully ordered.`);
+      }
+    </script>
+    <marquee behavior="scroll" direction="r" style="width: 100%"
+      ><h1>Web Development Services</h1></marquee
+    >
+
+    <div class="category">
+      <div class="service">
+        <div class="head">
+
+            <h2 style="text-align: center" class="heading">Static Website</h2>
+            <a href="../index.html">
+
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                
+                >
+                <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M20 20L4 4m16 0L4 20"
+                />
+            </svg>
+        </a>
+    </div>
+        <img
+        src="https://picsum.photos/id/237/200/300"
+        width="400"
+        height="240"
+        class="image"
+        alt="Static Website"
+        loading="lazy"
+        />
+        <div class="details">
+            <p>
+                <span class="child-head">Description:</span> A static website is a
+            simple and straightforward online presence that offers a fixed set
+            of web pages containing text, images, and other multimedia content.
+            Unlike dynamic websites, which generate content on the fly, static
+            websites display pre-built content to visitors. This makes them
+            fast, secure, and easy to maintain. Static websites are ideal for
+            businesses, individuals, or organizations looking to establish an
+            online presence without the need for complex functionality or
+            frequent updates. With a static website, you can showcase your
+            products, services, portfolio, or personal brand effectively,
+            providing visitors with essential information and a seamless
+            browsing experience.
+          </p>
+          <p><span class="child-head">Price Range:</span> $500 - $1,000</p>
+          <p style="color: green">
+            <span class="child-head">Discount:</span> 10% Off
+          </p>
+          <button class="order-btn" onclick="orderService('Static Website')">
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div class="container">
+    <h2>Place Your Order</h2>
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="service">Select Service</label>
+        <select id="service" name="service" required>
+            <option value="">Select a service...</option>
+            <option value="Static Website">Static Website</option>
+            <option value="Dynamic Website">Dynamic Website</option>
+            <option value="Website using React">Website using React</option>
+            <option value="eCommerce Website">eCommerce Website</option>
+            <option value="Dropshipping Website">Dropshipping Website</option>
+            <option value="Grocery Website">Grocery Website</option>
+            <option value="Food Ordering">Food Ordering</option>
+            <option value="Custom Business Website">Custom Business Website</option>
+            <option value="Travel Booking Website">Travel Booking Website</option>
+        </select>
+
+        <label for="message">Additional Message (optional)</label>
+        <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+        <input type="submit" value="Place Order">
+    </form>
+</div>
+    </div>
+  </body>
+</html>

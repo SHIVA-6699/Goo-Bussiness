@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Business Website</title>
+    <link rel="stylesheet" href="../Service_styles/service1_style.css" />
+  </head>
+  <body>
+    <marquee behavior="scroll" direction="r" style="width: 100%"
+      ><h1>Custom Business Website</h1></marquee
+    >
+
+    <div class="category">
+      <div class="service">
+        <div class="head">
+          <h2 style="text-align: center" class="heading">
+            Custom Business Website
+          </h2>
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M20 20L4 4m16 0L4 20"
+              />
+            </svg>
+          </a>
+        </div>
+        <img
+          src="https://picsum.photos/id/54/3264/2176"
+          width="400"
+          height="240"
+          class="image"
+          alt="Custom Business Website"
+          loading="lazy"
+        />
+        <div class="details">
+          <p>
+            <span class="child-head">Description:</span> A custom business
+            website is a tailored online solution designed to meet the specific
+            needs and goals of a business or organization. Unlike template-based
+            websites, which offer predefined layouts and functionalities, custom
+            business websites are built from scratch or extensively customized
+            to align with the brand identity, target audience, and business
+            objectives. They offer flexibility, scalability, and unique features
+            tailored to the business requirements, industry standards, and user
+            preferences. Custom business websites can include advanced
+            functionality such as customer portals, inventory management
+            systems, CRM integration, and more, tailored to streamline business
+            operations and enhance user experience. With a custom business
+            website, you can create a unique online presence, differentiate your
+            brand, and achieve your business goals effectively.
+          </p>
+          <p style="color: green">
+            <span class="child-head">Price Range:</span> Custom Quote
+          </p>
+          <p>
+            <span class="child-head">Discount:</span> Contact us for details
+          </p>
+          <button
+            class="order-btn"
+            onclick="orderService('Custom Business Website')"
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Place Your Order</h2>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+            required
+          />
+
+          <label for="service">Select Service</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service...</option>
+            <option value="Static Website">Static Website</option>
+            <option value="Dynamic Website">Dynamic Website</option>
+            <option value="Website using React">Website using React</option>
+            <option value="eCommerce Website">eCommerce Website</option>
+            <option value="Dropshipping Website">Dropshipping Website</option>
+            <option value="Grocery Website">Grocery Website</option>
+            <option value="Food Ordering">Food Ordering</option>
+            <option value="Custom Business Website">
+              Custom Business Website
+            </option>
+            <option value="Travel Booking Website">
+              Travel Booking Website
+            </option>
+          </select>
+
+          <label for="message">Additional Message (optional)</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something.."
+          ></textarea>
+
+          <input type="submit" value="Place Order" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

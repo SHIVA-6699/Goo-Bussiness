@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Website</title>
+    <link rel="stylesheet" href="../Service_styles/service1_style.css" />
+  </head>
+  <body>
+    <marquee behavior="scroll" direction="r" style="width: 100%"
+      ><h1>Grocery Website</h1></marquee
+    >
+
+    <div class="category">
+      <div class="service">
+        <div class="head">
+          <h2 style="text-align: center" class="heading">Grocery Website</h2>
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M20 20L4 4m16 0L4 20"
+              />
+            </svg>
+          </a>
+        </div>
+        <img
+          src="https://picsum.photos/id/30/1280/901"
+          width="400"
+          height="240"
+          class="image"
+          alt="Grocery Website"
+          loading="lazy"
+        />
+        <div class="details">
+          <p>
+            <span class="child-head">Description:</span> A grocery website is an
+            online platform for selling grocery products to customers. It
+            provides a convenient and efficient way for users to browse through
+            a wide range of grocery items, add them to their cart, and place
+            orders for home delivery or pickup. Grocery websites typically
+            feature categories such as fruits, vegetables, dairy products,
+            grains, beverages, and household essentials. They offer features
+            like search functionality, product filtering, secure payment
+            options, order tracking, and customer support. Grocery websites
+            cater to busy individuals and families looking for a convenient way
+            to shop for groceries without visiting physical stores. With a
+            grocery website, you can create a seamless shopping experience for
+            your customers, manage inventory efficiently, and grow your online
+            grocery business.
+          </p>
+          <p><span class="child-head">Price Range:</span> $1,200 - $2,000</p>
+          <p style="color: green">
+            <span class="child-head">Discount:</span> 15% Off
+          </p>
+          <button class="order-btn" onclick="orderService('Grocery Website')">
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Place Your Order</h2>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+            required
+          />
+
+          <label for="service">Select Service</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service...</option>
+            <option value="Static Website">Static Website</option>
+            <option value="Dynamic Website">Dynamic Website</option>
+            <option value="Website using React">Website using React</option>
+            <option value="eCommerce Website">eCommerce Website</option>
+            <option value="Dropshipping Website">Dropshipping Website</option>
+            <option value="Grocery Website">Grocery Website</option>
+            <option value="Food Ordering">Food Ordering</option>
+            <option value="Custom Business Website">
+              Custom Business Website
+            </option>
+            <option value="Travel Booking Website">
+              Travel Booking Website
+            </option>
+          </select>
+
+          <label for="message">Additional Message (optional)</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something.."
+          ></textarea>
+
+          <input type="submit" value="Place Order" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
